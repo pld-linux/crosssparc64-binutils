@@ -12,11 +12,11 @@ Group:		Development/Tools
 Source0:	ftp://ftp.kernel.org/pub/linux/devel/binutils/binutils-%{version}.tar.bz2
 # Source0-md5:	0d64d65d33a7f305e5ef8351086b9a3a
 URL:		http://sources.redhat.com/binutils/
+BuildRequires:	automake
 BuildRequires:	bash
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	gettext-devel
-BuildRequires:	perl-devel
 %ifarch sparc sparc32
 BuildRequires:	sparc32
 %endif
@@ -54,6 +54,8 @@ Ten pakiet zawiera wersjê skro¶n± generuj±c± kod dla SPARC64.
 %setup -q -n binutils-%{version}
 
 %build
+cp /usr/share/automake/config.sub .
+
 # ldscripts won't be generated properly if SHELL is not bash...
 CFLAGS="%{rpmcflags}" \
 LDFLAGS="%{rpmldflags}" \
@@ -64,8 +66,9 @@ sparc32 \
 ./configure \
 	--disable-shared \
 	--prefix=%{_prefix} \
-	--infodir=%{_infodir} \
+	--libdir=%{_libdir} \
 	--mandir=%{_mandir} \
+	--infodir=%{_infodir} \
 	--target=%{target}
 
 %{__make} all \
