@@ -6,12 +6,12 @@ Summary(pl):	Narzêdzia GNU dla programistów
 Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU
 Summary(tr):	GNU geliþtirme araçlarý
 Name:		crosssparc64-binutils
-Version:	2.14.90.0.5
+Version:	2.14.90.0.6
 Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.kernel.org/pub/linux/devel/binutils/binutils-%{version}.tar.bz2
-# Source0-md5:	023e0914937116121c2c34e59e0d1c4b
+# Source0-md5:	71b99dba3045a359dc314dbebedcf502
 URL:		http://sourceware.cygnus.com/binutils/
 Prereq:		/sbin/ldconfig
 BuildRequires:	flex
