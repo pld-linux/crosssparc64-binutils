@@ -46,7 +46,7 @@ programów. Znajduj± siê tutaj miêdzy innymi assembler, konsolidator
 (linker), a tak¿e inne narzêdzia do manipulowania binarnymi plikami
 programów i bibliotek.
 
-Ten pakiet zawiera wersjê skro¶n± generuj±c± kod dla SPARC64
+Ten pakiet zawiera wersjê skro¶n± generuj±c± kod dla SPARC64.
 
 %prep
 %setup -q -n binutils-%{version}
@@ -94,5 +94,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{arch}/bin/*
 %dir %{arch}/lib
 %dir %{arch}/lib/*
-%attr(644,root,root) %{arch}/lib/ldscripts/*
+%{arch}/lib/ldscripts/*
 %{_mandir}/man?/%{target}-*
