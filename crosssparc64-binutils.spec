@@ -69,6 +69,7 @@ sparc32 \
 	--libdir=%{_libdir} \
 	--mandir=%{_mandir} \
 	--infodir=%{_infodir} \
+	--enable-64-bit-bfd \
 	--target=%{target}
 
 %{__make} all \
