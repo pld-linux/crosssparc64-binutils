@@ -52,8 +52,6 @@ Ten pakiet zawiera wersjê skro¶n± generuj±c± kod dla SPARC64.
 
 %prep
 %setup -q -n binutils-%{version}
-%patch0 -p0
-%patch1 -p1
 
 %build
 cp /usr/share/automake/config.sub .
