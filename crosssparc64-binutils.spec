@@ -5,12 +5,14 @@ Summary(pl):	Skro¶ne narzêdzia programistyczne GNU dla SPARC64 - binutils
 Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU - SPARC64 binutils
 Summary(tr):	GNU geliþtirme araçlarý - SPARC64 binutils
 Name:		crosssparc64-binutils
-Version:	2.15.91.0.1
+Version:	2.15.91.0.2
 Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.kernel.org/pub/linux/devel/binutils/binutils-%{version}.tar.bz2
-# Source0-md5:	0d64d65d33a7f305e5ef8351086b9a3a
+# Source0-md5:	41983069bef07af4f1350c6d30666b2d
+Patch0:		binutils-pr290.patch
+Patch1:		binutils-pr338.patch
 URL:		http://sources.redhat.com/binutils/
 BuildRequires:	automake
 BuildRequires:	bash
@@ -52,6 +54,8 @@ Ten pakiet zawiera wersjê skro¶n± generuj±c± kod dla SPARC64.
 
 %prep
 %setup -q -n binutils-%{version}
+%patch0 -p0
+%patch1 -p1
 
 %build
 cp /usr/share/automake/config.sub .
