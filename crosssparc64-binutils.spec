@@ -94,4 +94,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{arch}/bin/*
 %dir %{arch}/lib
 %dir %{arch}/lib/*
+%attr(644,root,root) %{arch}/lib/ldscripts/*
 %{_mandir}/man?/%{target}-*
