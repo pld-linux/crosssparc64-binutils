@@ -5,7 +5,7 @@ Summary(pl):	Skro¶ne narzêdzia programistyczne GNU dla SPARC64 - binutils
 Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU - SPARC64 binutils
 Summary(tr):	GNU geliþtirme araçlarý - SPARC64 binutils
 Name:		crosssparc64-binutils
-Version:	2.16.91.0.5
+Version:	2.16.91.0.6
 Release:	1
 License:	GPL
 Group:		Development/Tools
