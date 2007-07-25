@@ -17,7 +17,7 @@ BuildRequires:	bash
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	gettext-devel
-%ifarch sparc sparc32
+%ifarch sparc
 BuildRequires:	sparc32
 %endif
 ExcludeArch:	sparc64
@@ -60,7 +60,7 @@ cp /usr/share/automake/config.sub .
 CFLAGS="%{rpmcflags} -fno-strict-aliasing" \
 LDFLAGS="%{rpmldflags}" \
 CONFIG_SHELL="/bin/bash" \
-%ifarch sparc sparc32
+%ifarch sparc
 sparc32 \
 %endif
 ./configure \
