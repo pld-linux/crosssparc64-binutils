@@ -1,0 +1,4 @@
+- BuildRequires: perl-devel for man pages
+- remove win*/netware tool man pages
+- more translations
+- release 2
