@@ -5,12 +5,12 @@ Summary(pl.UTF-8):	Skrośne narzędzia programistyczne GNU dla SPARC64 - binutil
 Summary(pt_BR.UTF-8):	Utilitários para desenvolvimento de binários da GNU - SPARC64 binutils
 Summary(tr.UTF-8):	GNU geliştirme araçları - SPARC64 binutils
 Name:		crosssparc64-binutils
-Version:	2.17.50.0.17
+Version:	2.18.50.0.1
 Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.kernel.org/pub/linux/devel/binutils/binutils-%{version}.tar.bz2
-# Source0-md5:	f1852ef43d7539480c77f813224ef81c
+# Source0-md5:	7bd8bd76a0ccae337456a6396224d150
 URL:		http://sources.redhat.com/binutils/
 BuildRequires:	automake
 BuildRequires:	bash
